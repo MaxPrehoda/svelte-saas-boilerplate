@@ -54,7 +54,7 @@ Everything you need to get started for a SaaS company:
 
 ## Suggested Hosting Stack
 
-**There’s no cost for using this template except for Defy**. The costs below reflect our suggested hosting stack.
+**There’s no cost for using this template except for Defy's membership costs**. The costs below reflect our suggested hosting stack.
 
 - **$0/mo** — Supabase free tier, Vercel free tier. 
   - Pros: 
