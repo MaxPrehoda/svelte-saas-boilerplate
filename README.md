@@ -207,7 +207,3 @@ After the steps above, you’ll have a working version like the demo page. Howev
 ## Icons
 
 Icons in the template are from [Solar Broken Line Icons Collection](https://www.svgrepo.com/collection/solar-broken-line-icons/) via CC Attribution License. However if you want to use a different set we suggest Lucide Icons.
-
-# Sponsor 
-
-We hope you enjoy Quickstart! If you build mobile apps, please check out its sponsor/creator, [Defy](https://learn-defy.com). We can help improve your mobile app conversions, improve your app rating, and mitigate major bugs and outages.
