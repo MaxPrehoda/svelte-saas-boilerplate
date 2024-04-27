@@ -1,18 +1,18 @@
 # Quickstart
 
-### Quickstart is an fast and free to host SaaS template / boilerplate for Defy members.
+### Quickstart is a fast and free-to-host SaaS template/boilerplate for Defy members.
 
-Needed information to build and host this project are available @ https://www.learn-defy.com/.
+The needed information to build and host this project is available @ https://www.learn-defy.com/.
 
 - [Feature Rich](#features): user auth, user dashboard, marketing site, blog engine, billing/subscriptions, pricing page, and more. 
-- [Lightning Performance](#performance--best-practices): fast pre-rendered pages which score 100/100 on Google PageSpeed. 
+- [Lightning Performance](#performance--best-practices): fast pre-rendered pages that score 100/100 on Google PageSpeed. 
 - [Delighful Developer Experience](#tech-stack): tools you'll love working with, including SvelteKit, Tailwind, DaisyUI, Postgres, and Supabase. 
 - Extensible: all the tools you need to make additional marketing pages, UI components, user dashboards, admin portals, database backends, API endpoints, and more.
 - [Hosting](#suggested-hosting-stack): Our suggested hosting stack is free to host, cheap to scale, easy to manage, and includes automatic deployments.
 - [Fully Functional Demo](https://quickstart-five.vercel.app/)
 - [Quick Start](#quick-start): Full docs from `git clone` to deployment.
 
-Created by Defy [Defy](https://learn-defy.com)! Check out our website site for an example depolyment of Quickstart. 
+Created by Defy [Defy](https://learn-defy.com)! Check out our website site for an example deployment of Quickstart. 
 
 ## Demo 
 
@@ -28,11 +28,11 @@ Everything you need to get started for a SaaS company:
 
 - User Authentication: Sign up, sign out, forgot password, email verification, and oAuth. Powered by Supabase Auth.
 - Marketing Page with SEO optimization
-- Blog engine with rich formatting, RSS and SEO optimization.
+- Blog engine with rich formatting, RSS, and SEO optimization.
 - User Dashboard with user profile, user settings, update email/password, billing, and more.
 - Subscriptions powered by Stripe Checkout
 - Pricing page
-- Billing portal: self serve to change card, upgrade, cancel, or download receipts
+- Billing portal: self-serve to change card, upgrade, cancel, or download receipts
 - Onboarding flow after signup: collect user data, and select a payment plan
 - Style toolkit: theming and UI components
 - Responsive: designed for mobile and desktop.
@@ -66,7 +66,7 @@ Everything you need to get started for a SaaS company:
     - Does not include database backups. The frugal among you could hook up pgdump backups on lambda/S3 for a few cents per month.
     - Will auto-pause your database when not in use for 7 days. 
   - Who it’s for: 
-    - This tier is perfectly functional for a hobby project, or pre-revenue company (up to 50,000 monthly active users). It’s easy to scale up once revenue starts, but it’s also fine to keep at this scale indefinitely.
+    - This tier is perfectly functional for a hobby project, or pre-revenue company (up to 50,000 monthly active users). It’s easy to scale up once revenue starts, but overall it’s fine to keep at this scale indefinitely.
 - **$20/mo** - Supabase Pro, Vercel Basic
   - Pros: 
     - Database backups. 
@@ -79,13 +79,13 @@ Everything you need to get started for a SaaS company:
 
 ## Performance / Best Practices
 
-The selected tech stack creates lightning fast websites.
+The selected tech stack creates lightning-fast websites.
 
- - Pre-rendering (static generation) for marketing pages, pricing and blog
- - Instant navigation: the best of CSR + SSR in one. SSR your first page for fastest possible initial load times. For subsequent pages, the content is pre-loaded and rendered with CSR, for instant rendering.
+ - Pre-rendering (static generation) for marketing pages, pricing, and blog
+ - Instant navigation: the best of CSR + SSR in one. SSR your first page for the fastest possible initial load times. For subsequent pages, the content is pre-loaded and rendered with CSR, for instant rendering.
  - CDN optimized, for high edge-cache hit ratios
- - Edge-functions for dynamic APIs/pages
- - Svelte and Tailwind compile out unused HTML, CSS and JS at deploy time for smaller pages
+ - Edge functions for dynamic APIs/pages
+ - Svelte and Tailwind compile out unused HTML, CSS, and JS at deployment time for smaller pages
  - Linting to find accessibility and syntax issues
 
 The result is a perfect Google PageSpeed Insights score in all categories!
@@ -108,7 +108,7 @@ npm run dev --
 
 Installing a Svelte extension in your editor will help automatically apply formatting on-save, and show linting issues inline. The [VS Code svelte extension](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode) is excellent. [Extensions for other editors are available here.](https://sveltesociety.dev/tools#editor-support)
 
-To catch build, formatting and linting issues before you commit changes, we suggest the following local git hook. It will run before you commit, stop you from breaking the build, and show any issues that are found. Add the lines below to the git hook file at the location `.git/hooks/pre-commit`.
+To catch build, formatting, and linting issues before you commit changes, we suggest the following local git hook. It will run before you commit, stop you from breaking the build, and show any issues that are found. Add the lines below to the git hook file at the location `.git/hooks/pre-commit`.
 
 ```
 #!/bin/sh
@@ -118,7 +118,7 @@ npm run lint
 npm run build
 ```
 
-Finally: if you find build, formatting or linting rules too tedious, you can disable enforcement by deleting the CI files (`.github/workflows/*`) and remove the git hook (`.git/hooks/pre-commit`).
+Finally: if you find build, formatting, or linting rules too tedious, you can disable enforcement by deleting the CI files (`.github/workflows/*`) and removing the git hook (`.git/hooks/pre-commit`).
 
 ### Setup Supabase
 
@@ -163,38 +163,38 @@ Finally: if you find build, formatting or linting rules too tedious, you can dis
   - Get your [Secret API](https://dashboard.stripe.com/test/apikeys) key, and add it as an environment variable PRIVATE_STRIPE_API_KEY (`.env.local` locally, and Vercel environment for prod). Be sure to use test keys for development, and keep your production/live keys secret and secure.
 - Optional: theme your Stripe integration
   - Change the colors and fonts to match your brand [here](https://dashboard.stripe.com/settings/branding)
-- Update your pricing plan data to align to your stripe data
+- Update your pricing plan data to align with your stripe data
   - See `/src/routes/(marketing)/pricing/pricing.js` and Fill in all fields for each plan. stripe_price_id and stripe_product_id should only be omitted on a single “free” plan. Multiple free plans are not supported.
-    - The product in Stripe can contain several prices for the same product (annual, monthly, etc). The stripe_price_id you choose to put in this json will be the default we use for the checkout experience. However, if you have more prices configured for a product configured, the user can switch between them in the management portal.
-  - Set the `defaultPlanId` to the plan the user will see as their “current plan” after signup, but before subscribing to a paid plan (typically “free”). It should align to the plan with no stripe_price_id. 
+    - The product in Stripe can contain several prices for the same product (annual, monthly, etc). The stripe_price_id you choose to put in this JSON will be the default we use for the checkout experience. However, if you have more prices configured for a product configured, the user can switch between them in the management portal.
+  - Set the `defaultPlanId` to the plan the user will see as their “current plan” after signup, but before subscribing to a paid plan (typically “free”). It should align with the plan with no stripe_price_id. 
   - if you want an item highlighted on `/pricing`, specify  that plan ID in `/src/routes/(marketing)/pricing/+page.svelte`
 - Update your portal configuration
   - Open [stripe portal config](https://dashboard.stripe.com/test/settings/billing/portal) and make the following changes
-    - Disallow editing email under customer information (since we allow editing in primary portal)
+    - Disallow editing email under customer information (since we allow editing in a primary portal)
     - Optional: setup a custom domain so Stripe pages use your own domain
-- Repeat steps in production environment
+- Repeat steps in a production environment
 
 ### Deploy To Vercel
 
-Vercel deployment is extremely simple. Go to [Vercel New Deployment](https://vercel.com/new) and import your Github repository, your app is now live but not properly hosted. You need to add all your environment variables in the settings panel of your vercel project, after that you are all ready to go.
+Vercel deployment is extremely simple. Go to [Vercel New Deployment](https://vercel.com/new) and import your GitHub repository, your app is now live but not properly hosted. You need to add all your environment variables in the settings panel of your Vercel project, after that, you are all ready to go.
 
 ### Add your content!
 
-After the steps above, you’ll have a working version like the demo page. However, it’s not branded, and doesn’t have your content. The following checklist helps you customize the template to make a SaaS homepage for your company.
+After the steps above, you’ll have a working version like the demo page. However, it’s not branded and doesn’t have your content. The following checklist helps you customize the template to make a SaaS homepage for your company.
 
 - Set the PUBLIC_SITE_NAME to your company name in `.env.local` and your production environment. 
 - Content
-  - Add actual content for marketing homepage
+  - Add actual content for the marketing homepage
   - Add actual content for your blog (or delete the blog) 
-    - Update all fields in `src/routes/(markeing)/blog/posts.json`, and replace the post pages under `src/routes/(markeing)/blog/posts` to align to the urls from posts.json.
-    - Alternatively remove the blog by removing the src/routes/(marketing)/blog directory, and remove any links to the blog in the header and footer. You can always bring it back later.
-  - Add any pages you want on top of our boiler plate (about, terms of service, etc). Be sure to add links to them in the header, mobile menu header, and footer as appropriate (`src/routes/(marketing)/+layout.svelte`).
-  - Note: if you add any dynamic content to the main marketing page, pricing page or blog, be sure to set `prerender = false` in the appropriate `+page.ts` file. These are currently pre-rendered and served as static assets for performance reasons, but that will break if you add server side rendering requirements.
+    - Update all fields in `src/routes/(marketing)/blog/posts.json`, and replace the post pages under `src/routes/(marketing)/blog/posts` to align to the URLs from posts.json.
+    - Alternatively, remove the blog by removing the src/routes/(marketing)/blog directory, and remove any links to the blog in the header and footer. You can always bring it back later.
+  - Add any pages you want on top of our boilerplate (about, terms of service, etc). Be sure to add links to them in the header, mobile menu header, and footer as appropriate (`src/routes/(marketing)/+layout.svelte`).
+  - Note: if you add any dynamic content to the main marketing page, pricing page, or blog, be sure to set `prerender = false` in the appropriate `+page.ts` file. These are currently pre-rendered and served as static assets for performance reasons, but that will break if you add server-side rendering requirements.
 - Update SEO content
   - Update title and meta description tags for every public page. We include generic ones using your site name (PUBLIC_SITE_NAME), but the more specific these are the better.
-  - This done automatically for blog posts from `posts.json` metadata
+  - This is done automatically for blog posts from `posts.json` metadata
 - Style
-  - Create a new DaisyUI Theme matching your brand or use one of the built in themes from DaisyUI (see `tailwind.config.js`)
+  - Create a new DaisyUI Theme matching your brand or use one of the built-in themes from DaisyUI (see `tailwind.config.js`)
   - Update the marketing page layout `src/routes/(marketing)/+layout.svelte`: customize design, delete unwanted pages from header and footer
   - Style: make it your own look and feel.
   - Update the favicon in the `/static/` directory
@@ -206,4 +206,4 @@ After the steps above, you’ll have a working version like the demo page. Howev
 
 ## Icons
 
-Icons in the template are from [Solar Broken Line Icons Collection](https://www.svgrepo.com/collection/solar-broken-line-icons/) via CC Attribution License. However if you want to use a different set we suggest Lucide Icons.
+Icons in the template are from [Solar Broken Line Icons Collection](https://www.svgrepo.com/collection/solar-broken-line-icons/) via CC Attribution License. However, if you want to use a different set we suggest Lucide Icons.
