@@ -1,6 +1,6 @@
 # Quickstart
 
-### Quickstart is a fast and free-to-host SaaS template/boilerplate for Defy members.
+### Quickstart is a fast, open-source, and free-to-host SaaS template/boilerplate.
 
 The needed information to build and host this project is available @ https://www.learn-defy.com/.
 
