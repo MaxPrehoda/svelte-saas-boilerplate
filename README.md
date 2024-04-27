@@ -1,4 +1,4 @@
-# Quickstart
+# Svelte SaaS Boilerplate - Quickstart
 
 ### Quickstart is a fast, open-source, and free-to-host SaaS template/boilerplate.
 
