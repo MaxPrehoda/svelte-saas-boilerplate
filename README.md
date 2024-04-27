@@ -2,8 +2,6 @@
 
 ### Quickstart is a fast, open-source, and free-to-host SaaS template/boilerplate.
 
-The needed information to build and host this project is available @ https://www.learn-defy.com/.
-
 - [Feature Rich](#features): user auth, user dashboard, marketing site, blog engine, billing/subscriptions, pricing page, and more. 
 - [Lightning Performance](#performance--best-practices): fast pre-rendered pages that score 100/100 on Google PageSpeed. 
 - [Delighful Developer Experience](#tech-stack): tools you'll love working with, including SvelteKit, Tailwind, DaisyUI, Postgres, and Supabase. 
@@ -205,3 +203,5 @@ After the steps above, you’ll have a working version like the demo page. Howev
 ## Icons
 
 Icons in the template are from [Solar Broken Line Icons Collection](https://www.svgrepo.com/collection/solar-broken-line-icons/) via CC Attribution License. However, if you want to use a different set we suggest Lucide Icons.
+
+### Thank you for leaving a star and trying our template out! You're one of a kind 🦄
