@@ -18,8 +18,6 @@ Created by Defy [Defy](https://learn-defy.com)! Check out our website site for a
 
 You can explore all the features using our fully functional demo [Quickstart](https://quickstart-five.vercel.app/).
 
-[![Try it Now](https://img.shields.io/badge/Try_it_Now-37a779?style=for-the-badge 'Try it Now')](https://quickstart-five.vercel.app/)
-
 See [learn-defy.com](https://learn-defy.com) for an example of what’s possible after this template has design, content, and functionality added.
 
 ## Features
