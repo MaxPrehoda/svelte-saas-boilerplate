@@ -205,3 +205,5 @@ After the steps above, you’ll have a working version like the demo page. Howev
 Icons in the template are from [Solar Broken Line Icons Collection](https://www.svgrepo.com/collection/solar-broken-line-icons/) via CC Attribution License. However, if you want to use a different set we suggest Lucide Icons.
 
 ### Thank you for leaving a star and trying our template out! You're one of a kind 🦄
+
+#### wow you read the whole thing maybe
