@@ -1,4 +1,4 @@
-# Svelte SaaS Boilerplate - Quickstart
+# Svelte SaaS Boilerplate - Quickstart 🚀
 
 ### Quickstart is a fast, open-source, and free-to-host SaaS template/boilerplate.
 
@@ -12,13 +12,13 @@
 
 Created by Defy [Defy](https://learn-defy.com)! Check out our website site for an example deployment of Quickstart. 
 
-## Demo 
+## Demo 🎮
 
 You can explore all the features using our fully functional demo [Quickstart](https://quickstart-five.vercel.app/).
 
 See [learn-defy.com](https://learn-defy.com) for an example of what’s possible after this template has design, content, and functionality added.
 
-## Features
+## Features ✨
 
 Everything you need to get started for a SaaS company:
 
@@ -34,7 +34,7 @@ Everything you need to get started for a SaaS company:
 - Responsive: designed for mobile and desktop.
 - Extensible: all the tools you need to make additional marketing pages, UI components, admin portals, database backends, API endpoints, and more.
 
-## Tech Stack
+## Tech Stack 🛸
 
 - Web Framework: SvelteKit
 - CSS / Styling
@@ -48,7 +48,7 @@ Everything you need to get started for a SaaS company:
   - Stripe Checkout 
   - Stripe Portal
 
-## Suggested Hosting Stack
+## Suggested Hosting Stack ⭐
 
 **There’s no cost for using this template except for Defy's membership costs**. The costs below reflect our suggested hosting stack.
 
@@ -73,7 +73,7 @@ Everything you need to get started for a SaaS company:
   - Who it’s for: 
     - I suggest moving to this once you have paid customers or investors.
 
-## Performance / Best Practices
+## Performance / Best Practices 📚
 
 The selected tech stack creates lightning-fast websites.
 
